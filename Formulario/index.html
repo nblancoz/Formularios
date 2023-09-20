@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+</head>
+<body>
+    <h1>El club viejuner</h1>
+    <nav id="nav">
+        <a href="#inscripcion">Formulario de inscripición</a>
+        <br>
+        <br>
+        <a href="#ladronzuelos">Ladronzuelos de bicicletas</a>
+    </nav>
+    <h3>Formulario de inscripción:</h3>
+    <form id="inscripcion">
+        <fieldset>
+            <legend>Tu:</legend>
+            <label for="fname" tabindex="0" id="fname" class="label">Nombre</label>
+            <input type="text" id="fname" name="fname" placeholder="Escribe aquí tu nombre" autofocus class="label"><br>
+            <label for="lname" tabindex="0" class="label">Apellido</label>
+            <input type="text" id="lname" name="lname" placeholder="Escribe aquí tu apellido" class="label"><br>
+            <label for="age" tabindex="0" class="label">Edad</label>
+            <input type="number" id="age" name="age" placeholder="Inserta tu edad" class="label"><br>
+            <label for="masculino" tabindex="0" class="label">Masculino</label>
+            <input type="radio" id="masculino" name="masculino" value="masculino" class="label"><br>
+            <label for="femenino" tabindex="0" class="label">Femenino</label>
+            <input type="radio" id="femenino" name="femenino" value="femenino" class="label"><br>
+            <label for="viejuner" tabindex="0" class="label">Me siento viejuner</label>
+            <input type="checkbox" id="viejuner" name="viejuner" value="viejuner" class="label"><br>
+            <label for="type" tabindex="0" class="label">Escribe algo sobre ti:</label><br>
+            <input type="textarea" id="type" name="type" value="" placeholder="Cuentanos algo..." class="label"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Tus circunstancias:</legend>
+            <label for="email" tabindex="0" class="label">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Inserta tu correo electrónico" class="label"><br>
+            <label for="tel" tabindex="0" class="label">Teléfono</label>
+            <input type="tel" id="tel" name="tel" placeholder="Inserta tu teléfono" class="label"><br>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Eliminar</button>
+        <h3 id="ladronbici">Los ladronzuelos de bicicletas:</h3>
+    </form>
+    <form id="ladronzuelos">
+        <fieldset>
+            <legend>Información básica</legend>
+            <label for="date" tabindex="0" class="label">Fecha</label>
+            <input type="date" id="date" name="date" placeholder="Inserta aquí la fecha" autofocus class="label"><br>
+            <label for="time" tabindex="0" class="label">Hora</label>
+            <input type="time" id="time" name="time" placeholder="Inserta aquí la hora" class="label"><br>
+            <label for="color" tabindex="0" class="label">Color de la bicicleta</label>
+            <input type="color" id="color" name="color" placeholder="Inserta aquí el color de la bicicleta" class="label"><br>
+            <label for="range" tabindex="0" class="label">Rango de precio</label>
+            <input type="range" id="range" name="range" placeholder="Inserta aquí el rango de precio de la bicicleta" class="label"><br>
+            <label for="select" tabindex="0" class="label">Tipo de la bicicleta</label>
+            <input type="select" id="select" name="select" placeholder="Tipo de la bicicleta" class="label"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Acerca de la bici</legend>
+            <label for="date" tabindex="0" class="label">Fecha</label>
+            <input type="date" id="date" name="date" placeholder="Inserta aquí la fecha" autofocus class="label"><br>
+            <label for="accesories" class="label" id="accesorios">Acessorios</label>
+            <select multiple name="accesories" id="accesories" class="label">
+                <option value="ruedines">Ruedines</option>
+                <option value="pegatinas">Pegatinas</option>
+                <option value="cestita">Cestita</option>
+                <option value="bomba de aire">Bomba de aire</option>
+                <option value="timbre">Timbre</option>
+                <option value="foco">Foco</option>
+            </select>
+            <br>
+            <label for="brand" class="label">¿Qué marca era?</label>
+            <select name="brand" id="brand" class="label">
+                <option value="specialized">Specialized</option>
+                <option value="trek">Trek</option>
+                <option value="merida">Merida</option>
+                <option value="scott">Scott</option>
+                <option value="giant">Giant</option>
+                <option value="cube">Cube</option>
+                <option value="lapierre">Lapierre</option>
+                <option value="orbea">Orbea</option>
+                <option value="cannondale">Cannondale</option>
+                <option value="bmc">Bmc</option>
+                <option value="canyon">Canyon</option>
+                <option value="look">Look</option>
+                <option value="protek">Protek</option>
+                <option value="megamo">Megamo</option>
+                <option value="pinarello">Pinarello</option>
+            </select>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Eliminar</button>
+    </form>
+</body>
+<div class="top"><a href="#">Subir</a></div>
+</html>
